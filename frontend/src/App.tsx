@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      app works
+      <p>app works!</p>
     </>
   )
 }
