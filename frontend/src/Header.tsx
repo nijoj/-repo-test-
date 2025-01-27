@@ -4,7 +4,7 @@ import React from 'react';
 const Header = () => {
   return (
     <header>
-      <h1>My App</h1>
+      <h1>header works!</h1>
     </header>
   );
 };
