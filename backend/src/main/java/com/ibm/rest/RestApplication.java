@@ -24,8 +24,8 @@ public class RestApplication extends Application {
 
     @GET
     @Produces(MediaType.TEXT_PLAIN)
-    @Path("/greeting/{name}")
-    public String greeting(String name) {
-        return service.greeting(name);
+    @Path("/greeting/{id}")
+    public String greeting(String id) {
+        return service.greeting(id);
     }
 }
