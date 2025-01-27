@@ -16,7 +16,7 @@ public class RestApplication extends Application {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        return "hello";
+        return "hello world";
     }
 
     @GET
