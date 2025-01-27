@@ -10,8 +10,11 @@ import jakarta.ws.rs.core.MediaType;
 
 @ApplicationPath("/api")
 public class RestApplication extends Application {
-    @Inject
     GreetingService service;
+
+    public RestApplication(GreetingService service) {
+        this.service = service;
+    }
 
     @GET
     @Produces(MediaType.TEXT_PLAIN)
