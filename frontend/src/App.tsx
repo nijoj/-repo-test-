@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './Header'
 import Footer from './Footer'
+import SideNav from './SideNav'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,6 +14,7 @@ function App() {
       <p>app works!</p>
       <Header></Header>
       <Footer></Footer>
+      <SideNav></SideNav>
     </>
   )
 }
