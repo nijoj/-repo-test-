@@ -1,4 +1,4 @@
-// Assisted by watsonx Code Assistant 
+
 import React from 'react';
 
 const Header = () => {
