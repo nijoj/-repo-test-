@@ -10,8 +10,8 @@ import jakarta.ws.rs.core.MediaType;
 
 @ApplicationPath("/api")
 public class RestApplication extends Application {
-    // @Inject
-    // GreetingService service;
+    @Inject
+    GreetingService service;
 
     @GET
     @Produces(MediaType.TEXT_PLAIN)
@@ -19,10 +19,10 @@ public class RestApplication extends Application {
         return "hello";
     }
 
-    // @GET
-    // @Produces(MediaType.TEXT_PLAIN)
-    // @Path("/greeting/{name}")
-    // public String greeting(String name) {
-    //     return service.greeting(name);
-    // }
+    @GET
+    @Produces(MediaType.TEXT_PLAIN)
+    @Path("/greeting/{name}")
+    public String greeting(String name) {
+        return service.greeting(name);
+    }
 }
