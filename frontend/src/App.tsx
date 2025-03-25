@@ -7,7 +7,6 @@ import Footer from './Footer'
 import SideNav from './SideNav'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
